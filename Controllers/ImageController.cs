@@ -44,12 +44,12 @@ namespace XGGrid_Docker.Controllers
         {
             Stream stream = new System.IO.MemoryStream();
 
-            Bitmap bitmap = new Bitmap(100, 100);
+            Bitmap bitmap = new Bitmap(300, 100);
 
             using ( Graphics g = Graphics.FromImage(bitmap))
             {
-                g.DrawString("中文", new Font(fontName, 12), Brushes.White, new PointF(10, 10));
-                g.DrawString("Eng" , new Font(fontName, 12), Brushes.White, new PointF(10, 50));
+                g.DrawString("東南西北金木水火土", new Font(fontName, 12), Brushes.White, new PointF(10, 10));
+                g.DrawString("ABCDEFGHIJKLMNOPQ", new Font(fontName, 12), Brushes.White, new PointF(10, 50));
             }
 
             bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
