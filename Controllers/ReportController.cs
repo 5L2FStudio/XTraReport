@@ -134,6 +134,7 @@ namespace XGGrid_Docker.Controllers
                 case "Black": return File(Test(), "application/pdf");
                 case "Light": return File(Test("華康細黑體"), "application/pdf");
                 case "Medium": return File(Test("華康中黑體"), "application/pdf");
+                case "Noto": return File(Test("Noto Sans CJK TC"), "application/pdf");
                 default: return null;
             }
         }

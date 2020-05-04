@@ -32,6 +32,7 @@ namespace XGGrid_Docker.Controllers
                 case "Black": stream = Test("微軟正黑體"); break;
                 case "Light": stream = Test("華康細黑體"); break;
                 case "Medium": stream = Test("華康中黑體"); break;
+                case "Noto" : stream = Test("Noto Sans CJK TC"); break;
                 default: stream = null; break;
             }
             stream.Position = 0;
