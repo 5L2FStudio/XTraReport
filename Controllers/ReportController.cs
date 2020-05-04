@@ -132,11 +132,9 @@ namespace XGGrid_Docker.Controllers
             switch (filetype)
             {
                 case "Black": return File(Test(), "application/pdf");
-                case "Noto" : return File(Test("Noto Sans CJK TC"), "application/pdf");
-                case "One"  : return File(Test("I.Ming"), "application/pdf");
-                case "Ming" : return File(Test("一点明朝"), "application/pdf");
-                    
-                default     : return null;
+                case "Light": return File(Test("華康細黑體"), "application/pdf");
+                case "Medium": return File(Test("華康中黑體"), "application/pdf");
+                default: return null;
             }
         }
     }

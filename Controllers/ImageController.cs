@@ -30,9 +30,8 @@ namespace XGGrid_Docker.Controllers
             switch (filetype)
             {
                 case "Black": stream = Test("微軟正黑體"); break;
-                case "Noto" : stream = Test("Noto Sans CJK TC"); break;
-                case "One"  : stream = Test("I.Ming"); break;
-                case "Ming" : stream = Test("一点明朝"); break;
+                case "Light": stream = Test("華康細黑體"); break;
+                case "Medium": stream = Test("華康中黑體"); break;
                 default: stream = null; break;
             }
             stream.Position = 0;

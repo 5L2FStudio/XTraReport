@@ -6,11 +6,8 @@ RUN apt-get update
 RUN apt-get install -y libgdiplus libc6-dev
 RUN apt-get install -y libicu-dev libharfbuzz0b libfontconfig1 libfreetype6
 RUN apt-get install fontconfig
-RUN mkdir -p /usr/share/fonts/truetype/noto
 RUN mkdir -p /usr/share/fonts/truetype/jh
-COPY ["Fonts/*.otf", "/usr/share/fonts/truetype/noto/"] 
 COPY ["Fonts/*.ttc", "/usr/share/fonts/truetype/jh/"] 
-RUN chmod 644 /usr/share/fonts/truetype/noto/*  
 RUN chmod 644 /usr/share/fonts/truetype/jh/*  
 RUN fc-cache -fv
 EXPOSE 80
